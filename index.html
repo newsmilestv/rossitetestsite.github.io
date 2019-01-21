@@ -123,7 +123,7 @@
               <!-- <p><a class="btn btn-lg btn-primary" href="#" role="button">подробнее</a></p>
               <p><a class="btn btn-lg btn-default" href="#" role="button">подробнее</a></p> -->
           </div>
-             <div class="team-pos">
+             <div class="team-pos visible-lg">
               <div class="row team">
                 <div class="col-md-3 team-item">
                   <i class="img-team left"></i>
@@ -184,7 +184,7 @@
             <!-- <p><a class="btn btn-lg btn-primary" href="#" role="button">подробнее</a></p>
             <p><a class="btn btn-lg btn-default" href="#" role="button">подробнее</a></p> -->
         </div>
-           <div class="team-pos">
+           <div class="team-pos visible-lg">
             <div class="row team">
               <div class="col-md-3 team-item">
                 <i class="img-team left"></i>
@@ -245,7 +245,7 @@
           <!-- <p><a class="btn btn-lg btn-primary" href="#" role="button">подробнее</a></p>
           <p><a class="btn btn-lg btn-default" href="#" role="button">подробнее</a></p> -->
       </div>
-         <div class="team-pos">
+         <div class="team-pos visible-lg">
           <div class="row team">
             <div class="col-md-3 team-item">
               <i class="img-team left"></i>
@@ -287,11 +287,16 @@
     var button = document.getElementById('start-demo'),
         background = document.getElementById('wrapp');
 
-        setInterval(function () {
-          button.onclick = background.style.visibility = 'hidden';
-        } , 5000);
+        // setTimeout(function () {
+        //   button.onclick = background.style.visibility = 'hidden';
+        // } , 5000);
 
-
+        button.onclick =function () {
+          setTimeout(function () {
+            background.style.visibility = 'hidden';
+            //alert('HI!!!');
+          } , 5000);
+        };
   })();
   </script>
 
